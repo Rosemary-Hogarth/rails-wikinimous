@@ -13,3 +13,52 @@
  *= require_tree .
  *= require_self
  */
+ .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+h2 {
+  font-family: "Roboto Slab";
+  font-weight: 400;
+}
+
+h2 a {
+  text-decoration: none;
+}
+
+h2 a:hover {
+  text-decoration: underline;
+}
+
+article {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 120%;
+}
+
+
+small {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 56px; /* Adjust this value as needed */
+    left: 0;
+    width: 100%;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  @media (min-width: 992px) {
+    .navbar-expand-lg {
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+    }
+}
+}
