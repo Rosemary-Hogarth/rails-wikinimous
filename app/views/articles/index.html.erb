@@ -17,7 +17,17 @@
   </nav><!-- As a link -->
 
 
-
+<div class="container mt-3">
+  <!-- Add a flash message -->
+  <div class="row">
+    <div class="col-8 offset-sm-2">
+      <% flash.each do |key, value| %>
+        <div class="alert alert-<%= key %> text-center" role="alert">
+          <%= value %>
+        </div>
+      <% end %>
+    </div>
+  </div>
 
 
 <div class="container mt-3">

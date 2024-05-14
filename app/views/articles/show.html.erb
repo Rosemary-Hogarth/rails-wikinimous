@@ -20,9 +20,11 @@
   <div class="row">
     <div class="col-8 offset-sm-2">
     <h1><%= @article.title %></h1>
+    <hr>
+    <div class="links mb-2">
       <span><%= link_to "Edit", edit_article_path %></span>
       <span><%= link_to "Delete", article_path(@article), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %></span>
-
+    </div>
       <article class="mb-3">
         <% @recent_articles.each do |article| %>
         <p><%= article.content %></p>
